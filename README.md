@@ -1,4 +1,4 @@
-Graph Academy Course: Building Neo4j Applications with Python
+# Graph Academy Course: Building Neo4j Applications with Python
 
 This repository is a copy of https://github.com/neo4j-graphacademy/app-python which
 accompanies the [Graph Academy Course](https://graphacademy.neo4j.com/courses/app-python/)
