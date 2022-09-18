@@ -2,9 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bf5f982-f771-4913-832e-07d3ce6f336d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.tox/dist/UNKNOWN-0.0.0.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.tox/dist/UNKNOWN-0.0.0.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/dao/genres.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/dao/genres.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/dao/movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/dao/movies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/dao/people.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/dao/people.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/dao/ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/dao/ratings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/activate" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/activate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/activate.csh" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/activate.csh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/activate.fish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/autopep8" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/autopep8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/dotenv" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/dotenv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/easy_install" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/easy_install-3.9" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/easy_install-3.9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/flask" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/flask" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/jwt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/normalizer" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/normalizer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/pip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/pip3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/pip3.9" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/pip3.9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/pipreqs" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/pipreqs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/py.test" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/py.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/pycodestyle" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/pycodestyle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/pytest" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/pytest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/bin/virtualenv" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/bin/virtualenv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/Flask-2.0.2.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/Flask-2.0.2.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/PyJWT-1.4.2.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/PyJWT-1.4.2.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/PyJWT-1.4.2.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/PyJWT-1.4.2.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/PyJWT-1.4.2.dist-info/REQUESTED" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/PyJWT-1.4.2.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/PyJWT-1.4.2.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/PyJWT-1.4.2.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/PyJWT-1.4.2.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/autopep8-1.6.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/autopep8-1.6.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/charset_normalizer-2.0.9.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/charset_normalizer-2.0.9.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/algorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/algorithms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/api_jws.py" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/api_jws.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/api_jwt.py" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/api_jwt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/contrib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/contrib/algorithms/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/contrib/algorithms/py_ecdsa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/contrib/algorithms/pycrypto.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/jwt/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/pip-20.2.3.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/pip-20.2.3.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/pipreqs-0.4.11.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/pipreqs-0.4.11.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/pycodestyle-2.8.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/pycodestyle-2.8.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/pytest-6.2.5.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/pytest-6.2.5.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/python_dotenv-0.19.2.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/python_dotenv-0.19.2.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/setuptools-49.2.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/setuptools-49.2.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/virtualenv-20.10.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/lib/python3.9/site-packages/virtualenv-20.10.0.dist-info/RECORD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,12 +67,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="2EwvH9AzGNGTecVq8CJwmACgamG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bf5f982-f771-4913-832e-07d3ce6f336d" name="Default Changelist" comment="" />
+      <created>1663519372864</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663519372864</updated>
+    </task>
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

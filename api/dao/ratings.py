@@ -52,9 +52,26 @@ class RatingDAO:
     The `skip` variable should be used to skip a certain number of rows.
     """
     # tag::forMovie[]
-    def for_movie(self, id, sort = 'timestamp', order = 'ASC', limit = 6, skip = 0):
-        # TODO: Get ratings for a Movie
-        # TODO: Remember to escape the braces in the cypher query with double braces: {{ }}
+    def for_movie(self, id, sort='timestamp', order='ASC', limit=6, skip=0):
+        # Get ratings for a Movie
+        def get_movie_ratings(tx, id, sort, order, limit):
+            cypher = """
+            MATCH (u:User)-[r:RATED]->(m:Movie {{tmdbId: $id}})
+            RETURN r {{
+                .rating,
+                .timestamp,
+                user: u {{
+                    .userId, .name
+                }}
+            }} AS review
+            ORDER BY r.`{0}` {1}
+            SKIP $skip
+            LIMIT $limit
+            """.format(sort, order)
 
-        return ratings
-    # end::forMovie[]
+            result = tx.run(cypher, id=id, limit=limit, skip=skip)
+
+            return [row.get("review") for row in result]
+
+        with self.driver.session() as session:
+            return session.read_transaction(get_movie_ratings, id, sort, order, limit)

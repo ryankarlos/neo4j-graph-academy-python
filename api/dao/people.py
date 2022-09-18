@@ -20,12 +20,28 @@ class PeopleDAO:
     certain number of rows.
     """
     # tag::all[]
-    def all(self, q, sort = 'name', order = 'ASC', limit = 6, skip = 0):
-        # TODO: Get a list of people from the database
-        # TODO: Remember to use double braces to replace the braces in the Cypher query {{ }}
+    def all(self, q, sort='name', order='ASC', limit=6, skip=0):
+        # Get a list of people from the database
+        def get_all_people(tx, q, sort, order, limit, skip):
+            cypher = "MATCH (p:Person) "
 
-        return people[skip:limit]
+            # If q is set, use it to filter on the name property
+            if q is not None:
+                cypher += "WHERE p.name CONTAINS $q"
 
+            cypher += """
+            RETURN p {{ .* }} AS person
+            ORDER BY p.`{0}` {1}
+            SKIP $skip
+            LIMIT $limit
+            """.format(sort, order)
+
+            result = tx.run(cypher, q=q, sort=sort, order=order, limit=limit, skip=skip)
+
+            return [row.get("person") for row in result]
+
+        with self.driver.session() as session:
+            return session.read_transaction(get_all_people, q, sort, order, limit, skip)
     # end::all[]
 
     """
@@ -33,11 +49,26 @@ class PeopleDAO:
 
     If no user is found, a NotFoundError should be thrown.
     """
-    # tag::findById[]
-    def find_by_id(self, id):
-        # TODO: Find a user by their ID
 
-        return pacino
+    def find_by_id(self, id):
+        # Find a user by their ID
+        def get_person(tx, id):
+            row = tx.run("""
+                MATCH (p:Person {tmdbId: $id})
+                RETURN p {
+                    .*,
+                    actedCount: size((p)-[:ACTED_IN]->()),
+                    directedCount: size((p)-[:DIRECTED]->())
+                } AS person
+            """, id=id).single()
+
+            if row == None:
+                raise NotFoundException()
+
+            return row.get("person")
+
+        with self.driver.session() as session:
+            return session.read_transaction(get_person, id)
 
     # end::findById[]
 
@@ -45,9 +76,24 @@ class PeopleDAO:
     Get a list of similar people to a Person, ordered by their similarity score
     in descending order.
     """
-    # tag::getSimilarPeople[]
-    def get_similar_people(self, id, limit = 6, skip = 0):
-        # TODO: Get a list of similar people to the person by their id
 
-        return people[skip:limit]
-    # end::getSimilarPeople[]
+    def get_similar_people(self, id, limit=6, skip=0):
+        # Get a list of similar people to the person by their id
+        def get_similar_people(tx, id, skip, limit):
+            result = tx.run("""
+                MATCH (:Person {tmdbId: $id})-[:ACTED_IN|DIRECTED]->(m)<-[r:ACTED_IN|DIRECTED]-(p)
+                RETURN p {
+                    .*,
+                    actedCount: size((p)-[:ACTED_IN]->()),
+                    directedCount: size((p)-[:DIRECTED]->()),
+                    inCommon: collect(m {.tmdbId, .title, type: type(r)})
+                } AS person
+                ORDER BY size(person.inCommon) DESC
+                SKIP $skip
+                LIMIT $limit
+            """, id=id, skip=skip, limit=limit)
+
+            return [row.get("person") for row in result]
+
+        with self.driver.session() as session:
+            return session.read_transaction(get_similar_people, id, skip, limit)

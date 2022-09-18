@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/rk1103/Documents/app-python/sandbox"
+VIRTUAL_ENV="/Users/rk1103/Documents/neo4j-graph-academy-python/sandbox"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
